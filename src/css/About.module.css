@@ -6,12 +6,14 @@ h1 {
 .Aboutpage {
   min-height: 100vh !important;
   box-shadow: 0px -18px 70px #ffed99 !important;
+ 
 }
 
 .Aboutpagecontainer {
   margin: 0px 0px !important;
   min-width: 100vw !important;
   padding: 40px;
+  min-height: 100vh !important;
 }
 
 .Aboutpagephoto {
