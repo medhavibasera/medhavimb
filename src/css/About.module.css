@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Bevan&family=Open+Sans:wght@300;600;800&display=swap");
+
+h1 {
+  font-family: "Bevan", sans-serif;
+}
+.Aboutpage {
+  min-height: 100vh !important;
+  /* max-width: 100vw !important; */
+  box-shadow: 0px -18px 70px #ffed99 !important;
+  /* margin-bottom: 50px !important; */
+  /* FFED99 */
+}
+
+.Aboutpagecontainer {
+  padding: 7% 20% 10% 20%;
+  margin: 0px 0px !important;
+  min-width: 100vw !important;
+}
+
+.Aboutpagephoto {
+  width: 400px;
+  height: 400px;
+  margin: 40px 0px;
+  margin-left: 15%;
+  border-radius: 20px;
+  transform: rotate(-10deg);
+  text-align: right;
+}
+
+.Aboutpageintro {
+  margin-top: 50px;
+  margin-right: 40px;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 520;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  line-height: 1.6;
+}
+.Aboutpageresume {
+  width: 60px;
+  height: 60px;
+}
+.Aboutpageresume:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px 30px #fff, 0 0 30px 30px #fbeeac, 0 0 30px 30px #0ff;
+}
+.Aboutpageexperience {
+  background-color: #8ac4d0;
+  padding-bottom: 80px !important;
+  padding-top: 80px !important;
+}
+/* #476072 */
+@media (max-width: 768px) {
+  .Aboutpagephoto {
+    width: 300px;
+    height: 300px;
+    margin: 40px 0px;
+    border-radius: 20px;
+    transform: rotate(-10deg);
+    text-align: right;
+  }
+  .Aboutpagediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Aboutpageintro {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0px;
+  }
+}
