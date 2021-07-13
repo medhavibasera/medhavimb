@@ -65,7 +65,7 @@ export default function Contact() {
                 borderRadius: "20px",
               }}
             >
-              <Form onSubmit={sendEmail}>
+              <Form onSubmit={sendEmail} data-aos="fade-right">
                 <Form.Group controlId="exampleForm.ControlInput1">
                   <Form.Label>Name</Form.Label>
                   <Form.Control type="text" name="name" placeholder="👩🏻" />
@@ -100,6 +100,7 @@ export default function Contact() {
               marginTop: "10%",
               width: "100%",
             }}
+            data-aos="fade-left"
           >
             <div
               style={{
