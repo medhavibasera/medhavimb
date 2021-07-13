@@ -1,6 +1,4 @@
 import React from "react";
-import CardMoreMenu from "./CardMoreMenu";
-import CardHoverButton from "./CardHoverButton";
 import github from "../../images/github-1.png";
 const evStop = (ev) => {
   ev.preventDefault();
@@ -18,16 +16,8 @@ class CardHoverMenus extends React.Component {
     this.props.flashFn(msg);
   };
   render() {
-    const p = {
-      funcs: {
-        viewBoard: (e) => this.clkBtn(e, "viewBoard"),
-        pinAny: (e) => this.clkBtn(e, "pinAny"),
-        pinHere: (e) => this.clkBtn(e, "pinHere"),
-        notInterested: (e) => this.clkBtn(e, "notInterested"),
-        shareCard: (e) => this.clkBtn(e, "shareCard"),
-      },
-    };
-    //Above is hardwired for demo. Normally, const p = this.props;
+    const p = {};
+
     return (
       <div className="whenhovered" onClick={this.toggle}>
         {this.state.hiddenPopupMenu && (

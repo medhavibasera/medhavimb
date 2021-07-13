@@ -1,7 +1,6 @@
 import React from "react";
 import CardHoverMenus from "./CardHoverMenu/CardHoverMenu";
-import CardLoneMoreButton from "./CardHoverMenu/CardsLoneMoreButton";
-// import screenrecorder from "../images/ScreenRecorder.png"
+// // import screenrecorder from "../images/ScreenRecorder.png"
 import ExpenseTracker from "../images/expenseTracker.png";
 import Screenrecorder from "../images/ScreenRecorder.png";
 import Codeinturns from "../images/CodeinTurns.jpeg";
@@ -25,7 +24,6 @@ class Card extends React.Component {
                 src={ExpenseTracker}
                 style={{ minWidth: 300, minHeight: 100 }}
               />
-              <CardLoneMoreButton />
               <CardHoverMenus
                 flashFn={this.props.flashFn}
                 title="ExpenseTracker"
@@ -48,7 +46,6 @@ Filter by year helps you to ,find your expenses for that year across different m
                 src={Screenrecorder}
                 style={{ minWidth: 300, minHeight: 100 }}
               />
-              <CardLoneMoreButton />
               <CardHoverMenus
                 title="Screen Recorder"
                 description="The application helps to record the screen as well as tracks the time spent by user on the screen. The recording gets saved on your system after it is stopped."
@@ -66,7 +63,6 @@ Filter by year helps you to ,find your expenses for that year across different m
                 src={Codeinturns}
                 style={{ minWidth: 300, minHeight: 100 }}
               />
-              <CardLoneMoreButton />
               <CardHoverMenus
                 title="Code-In-Turns"
                 description="A collaborated project website made for Code-In-Turns hackathon."
@@ -85,7 +81,6 @@ Filter by year helps you to ,find your expenses for that year across different m
                 src={Msac}
                 style={{ minWidth: 300, minHeight: 100 }}
               />
-              <CardLoneMoreButton />
               <CardHoverMenus
                 title="Microsoft Student Ambassadors Club KIIT"
                 description="A collaborated project website made for Microsoft Student Ambassadors Club KIIT."
@@ -104,7 +99,6 @@ Filter by year helps you to ,find your expenses for that year across different m
                 src={db}
                 style={{ minWidth: 300, minHeight: 100 }}
               />
-              <CardLoneMoreButton />
               <CardHoverMenus
                 title="DoubtConnect Official Website"
                 description="A website made for mumbai based Ed-tech startup."
