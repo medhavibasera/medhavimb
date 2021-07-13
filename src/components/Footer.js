@@ -29,7 +29,7 @@ export default function Footer() {
           alt=""
           style={{ margin: "0px 4px", width: "24px", height: "24px" }}
         />{" "}
-        by Medhavi Basera  |  © 2021
+        by Medhavi Basera | © 2021
       </p>
     </div>
   );

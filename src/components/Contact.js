@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import emailjs from "emailjs-com";
@@ -28,7 +28,13 @@ export default function Contact() {
       })
       .catch((err) => console.log(err));
   }
-
+  const [text, settext] = useState("Submit");
+  const [displays, setdisplay] = useState(false);
+  function displaymessage() {
+    // window.alert("Submitted !");
+    settext("Submitted");
+    setdisplay(true);
+  }
   return (
     <div className={contact.contactpage} name="contact">
       <Container className={contact.contactpagecontainer}>
@@ -66,13 +72,28 @@ export default function Contact() {
               }}
             >
               <Form onSubmit={sendEmail} data-aos="fade-right">
+                {displays ? (
+                  <p
+                    style={{
+                      color: "#93D9A3",
+                      fontSize: "15px",
+                    }}
+                  >
+                    Success !
+                  </p>
+                ) : null}
+
                 <Form.Group controlId="exampleForm.ControlInput1">
                   <Form.Label>Name</Form.Label>
                   <Form.Control type="text" name="name" placeholder="👩🏻" />
                 </Form.Group>
                 <Form.Group controlId="exampleForm.ControlInput1">
                   <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" name="email" placeholder="📧" />
+                  <Form.Control
+                    type="email"
+                    name="user-email"
+                    placeholder="📧"
+                  />
                 </Form.Group>
 
                 <Form.Group controlId="exampleForm.ControlTextarea1">
@@ -84,8 +105,13 @@ export default function Contact() {
                     rows={3}
                   />
                 </Form.Group>
-                <Button variant="primary" type="submit" value="Send">
-                  Submit
+                <Button
+                  variant="primary"
+                  type="submit"
+                  value="Send"
+                  onClick={displaymessage}
+                >
+                  {text}
                 </Button>
               </Form>
             </div>
@@ -160,7 +186,7 @@ export default function Contact() {
               style={{
                 marginBottom: "30px",
                 fontFamily: "Open Sans",
-                fontSize: "28px",
+                fontSize: "24px",
                 fontWeight: "600",
               }}
             >

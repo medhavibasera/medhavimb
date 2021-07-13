@@ -114,7 +114,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <a href={myresume} download="Medhavi_Resunme.pdf">
+              <a href={myresume} download="MedhaviBasera_Resume.pdf">
                 <img
                   src={resume}
                   className={about.Aboutpageresume}
@@ -146,8 +146,8 @@ const About = () => {
             </h3>
             <h4 className="vertical-timeline-element-subtitle">DoubtConnect</h4>
             <p>
-              Creative Direction, User Experience, Visual Design, SEO, Online
-              Marketing
+              Developing an Ed-Tech platform with real-time audio and video
+              interaction.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -164,7 +164,7 @@ const About = () => {
             <h4 className="vertical-timeline-element-subtitle">
               Microsoft Student Ambassadors Community KIIT
             </h4>
-            <p>User Experience, Visual Design</p>
+            <p>Developed website for various Hackathon and events.</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -176,7 +176,7 @@ const About = () => {
           >
             <h3 className="vertical-timeline-element-title">Executive</h3>
             <h4 className="vertical-timeline-element-subtitle">KIIT E-CELL</h4>
-            <p>User Experience, Visual Design</p>
+            <p>Part of organizing committee of Hult Prize 2020.</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
@@ -190,7 +190,10 @@ const About = () => {
               Junior Executive
             </h3>
             <h4 className="vertical-timeline-element-subtitle">KIIT E-CELL</h4>
-            <p>Strategy, Social Media</p>
+            <p>
+              Part of an organizing committee of events, I-camp (Asian’s biggest
+              Internship camp) & E-Summit 2020.
+            </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>

@@ -18,7 +18,9 @@ function Navbars() {
               <Nav.Link className={styles.navitemslist}>.about( )</Nav.Link>
             </Link>
             <Link to="experience" smooth={true}>
-              <Nav.Link className={styles.navitemslist}>.experience( )</Nav.Link>
+              <Nav.Link className={styles.navitemslist}>
+                .experience( )
+              </Nav.Link>
             </Link>
             <Link to="project" smooth={true}>
               <Nav.Link className={styles.navitemslist}>.projects( )</Nav.Link>

@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="App" id="mypage">
+    <div className="App" style={{ width: "100vw" }}>
       <Navbar />
       <LandingPage />
       <About />
