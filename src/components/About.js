@@ -27,7 +27,7 @@ const About = () => {
     <div className={about.Aboutpage} name="about">
       <Container className={about.Aboutpagecontainer}>
         <h1
-          data-aos="fade-right"
+          // data-aos="fade-right"
           style={{
             marginLeft: "8%",
             marginBottom: "40px",
@@ -47,7 +47,7 @@ const About = () => {
           </Col>
           <Col className={about.Aboutpagediv}>
             <div data-aos="fade-up">
-              <p className={about.Aboutpageintro}>
+              <p className={about.Aboutpageintro} >
                 I am a passionate and creative developer from India with a
                 strong interest in Open source projects. I am currently pursuing
                 B.Tech in Computer Science and Engineering. I have been into
@@ -129,7 +129,7 @@ const About = () => {
       <div className={about.Aboutpageexperience} name="experience">
         <h1
           style={{ textAlign: "center", marginBottom: "50px" }}
-          data-aos="fade-right"
+          // data-aos="fade-right"
         >
           .experience()
         </h1>
