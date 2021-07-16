@@ -39,7 +39,7 @@ export default function Contact() {
     <div className={contact.contactpage} name="contact">
       <Container className={contact.contactpagecontainer}>
         <h1
-          data-aos="fade-right"
+          // data-aos="fade-right"
           style={{
             marginLeft: "8%",
             marginBottom: "50px",
@@ -71,7 +71,9 @@ export default function Contact() {
                 borderRadius: "20px",
               }}
             >
-              <Form onSubmit={sendEmail} data-aos="fade-right">
+              <Form onSubmit={sendEmail} 
+              // data-aos="fade-right"
+              >
                 {displays ? (
                   <p
                     style={{
@@ -126,7 +128,7 @@ export default function Contact() {
               marginTop: "10%",
               width: "100%",
             }}
-            data-aos="fade-left"
+            // data-aos="fade-left"
           >
             <div
               style={{

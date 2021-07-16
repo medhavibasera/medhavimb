@@ -27,7 +27,7 @@ const About = () => {
     <div className={about.Aboutpage} name="about">
       <Container className={about.Aboutpagecontainer}>
         <h1
-          data-aos="fade-right"
+          // data-aos="fade-right"
           style={{
             marginLeft: "8%",
             marginBottom: "40px",
@@ -129,7 +129,7 @@ const About = () => {
       <div className={about.Aboutpageexperience} name="experience">
         <h1
           style={{ textAlign: "center", marginBottom: "50px" }}
-          data-aos="fade-right"
+          // data-aos="fade-right"
         >
           .experience()
         </h1>

@@ -140,13 +140,25 @@ h1 {
   top: 0%;
   background: rgba(0, 0, 0, 0.75);
 }
-@media (max-width: 570px) {
+@media (min-width:351px) and (max-width: 570px) {
   .card {
     font-size: 1em;
     overflow: hidden;
     width: 90% !important;
     border-radius: 30px !important;
-    height: 250px !important;
+    height: 220px !important;
+  }
+  .whenhovered {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  .card {
+    font-size: 1em;
+    overflow: hidden;
+    width: 90% !important;
+    border-radius: 30px !important;
+    height: 190px !important;
   }
   .whenhovered {
     display: none;
