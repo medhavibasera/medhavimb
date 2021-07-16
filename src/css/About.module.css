@@ -78,8 +78,16 @@ h1 {
     align-items: center;
   }
   .Aboutpageintro {
-    font-size: 14px;
+    font-size: 10px;
     text-align: center;
+    margin: 10px 0px;
+  }
+  .Aboutpagephoto {
+    width: 250px;
+    height: 250px;
     margin: 20px 0px;
+  }
+  .Aboutpagecontainer {
+    padding: 10px;
   }
 }
