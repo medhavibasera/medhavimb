@@ -47,7 +47,7 @@ const About = () => {
           </Col>
           <Col className={about.Aboutpagediv}>
             <div data-aos="fade-up">
-              <p className={about.Aboutpageintro}>
+              <p className={about.Aboutpageintro} >
                 I am a passionate and creative developer from India with a
                 strong interest in Open source projects. I am currently pursuing
                 B.Tech in Computer Science and Engineering. I have been into
