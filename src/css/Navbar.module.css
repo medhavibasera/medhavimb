@@ -3,10 +3,10 @@
   width: 30px;
 }
 .navitems {
-  /* margin-left:  30% !important; */
   justify-content: space-between !important;
 }
-@media (min-width: 990px) and (max-width: 1231px) {
+
+@media (min-width: 990px)  {
   .navitemslist {
     padding-left: 32px !important;
     padding-right: 32px !important;
@@ -29,6 +29,6 @@
   .navitemslist {
     padding-left: 50px !important;
     padding-right: 50px !important;
-    font-size: 22px !important;
+    font-size: 18px !important;
   }
 }

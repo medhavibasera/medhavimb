@@ -11,6 +11,37 @@ import Linkedin from "../images/linkedin.png";
 import location from "../images/location.png";
 
 export default function Contact() {
+  const [text, settext] = useState("Submit");
+  const [displays, setdisplay] = useState(false);
+  const [name, setnameboolean] = useState(false);
+  const [email, setemailboolean] = useState(false);
+  const [message, setmessageboolean] = useState(false);
+
+  // const defaultOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
+
+  const isentername = (event) => {
+    if (event.target.value.trim().length > 0) {
+      setnameboolean(true);
+    }
+  };
+  const isenteremail = (event) => {
+    if (event.target.value.trim().length > 0) {
+      setemailboolean(true);
+    }
+  };
+  const isentermessage = (event) => {
+    if (event.target.value.trim().length > 0) {
+      setmessageboolean(true);
+    }
+  };
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -28,12 +59,16 @@ export default function Contact() {
       })
       .catch((err) => console.log(err));
   }
-  const [text, settext] = useState("Submit");
-  const [displays, setdisplay] = useState(false);
+
   function displaymessage() {
-    // window.alert("Submitted !");
-    settext("Submitted");
-    setdisplay(true);
+    if (name && email && message) {
+      setdisplay(true);
+      settext("Submitted");
+    }
+    console.log(name);
+    console.log(email);
+    console.log(message);
+    console.log(displays);
   }
   return (
     <div className={contact.contactpage} name="contact">
@@ -41,27 +76,18 @@ export default function Contact() {
         <h1
           // data-aos="fade-right"
           style={{
-            marginLeft: "8%",
             marginBottom: "50px",
             marginTop: "50px",
             display: "inline-block",
+            fontFamily: "EB Garamond",
+            fontSize: "50px",
+            fontWeight: "900",
           }}
         >
           .contact( )
         </h1>
         <Row xs={1} md={2}>
           <Col className={contact.contactpagediv}>
-            <h2
-              style={{
-                marginBottom: "20px",
-                fontFamily: "Open Sans",
-                fontSize: "28px",
-                fontWeight: "600",
-              }}
-            >
-              {" "}
-              Get in touch !
-            </h2>
             <div
               className="forms"
               style={{
@@ -71,10 +97,8 @@ export default function Contact() {
                 borderRadius: "20px",
               }}
             >
-              <Form onSubmit={sendEmail} 
-              // data-aos="fade-right"
-              >
-                {displays ? (
+              <Form onSubmit={sendEmail}>
+                {displays && name && email && message ? (
                   <p
                     style={{
                       color: "#93D9A3",
@@ -87,7 +111,12 @@ export default function Contact() {
 
                 <Form.Group controlId="exampleForm.ControlInput1">
                   <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" name="name" placeholder="👩🏻" />
+                  <Form.Control
+                    type="text"
+                    name="name"
+                    placeholder="👩🏻"
+                    onChange={isentername}
+                  />
                 </Form.Group>
                 <Form.Group controlId="exampleForm.ControlInput1">
                   <Form.Label>Email</Form.Label>
@@ -95,6 +124,7 @@ export default function Contact() {
                     type="email"
                     name="user-email"
                     placeholder="📧"
+                    onChange={isenteremail}
                   />
                 </Form.Group>
 
@@ -105,6 +135,7 @@ export default function Contact() {
                     name="message"
                     placeholder="📨"
                     rows={3}
+                    onChange={isentermessage}
                   />
                 </Form.Group>
                 <Button
@@ -112,6 +143,9 @@ export default function Contact() {
                   type="submit"
                   value="Send"
                   onClick={displaymessage}
+                  className={`${
+                    name && email && message && displays && contact.btncolor
+                  }`}
                 >
                   {text}
                 </Button>
@@ -122,23 +156,12 @@ export default function Contact() {
             className={contact.contactpagediv}
             style={{
               display: "flex",
-              justifyContent: "left",
-              alignItems: "center",
               flexDirection: "column",
               marginTop: "10%",
               width: "100%",
             }}
-            // data-aos="fade-left"
           >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-
-                margin: "20px 0px",
-              }}
-            >
+            <div className={contact.contactitems}>
               <img
                 src={location}
                 style={{ height: "30px", width: "30px" }}
@@ -146,24 +169,18 @@ export default function Contact() {
               />
               <span
                 style={{
-                  fontSize: "24px",
+                  fontSize: "20px",
+                  fontFamily: "Uchen",
                   fontWeight: "600",
                   paddingLeft: "10px",
                 }}
               >
                 {" "}
-                Dehradun, Uttarakhand
+                Dehradun,Uttarakhand
               </span>
             </div>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "right",
-                textAlign: "right",
 
-                margin: "20px 0px",
-              }}
-            >
+            <div className={contact.contactitems}>
               <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
                 <img
                   src={mail}
@@ -174,50 +191,44 @@ export default function Contact() {
 
               <span
                 style={{
-                  fontSize: "24px",
+                  fontSize: "20px",
                   textAlign: "right",
                   fontWeight: "600",
                   paddingLeft: "10px",
+                  fontFamily: "Uchen",
                 }}
               >
                 {" "}
                 mb.medhavi@gmail.com
               </span>
             </div>
-            <h2
-              style={{
-                marginBottom: "30px",
-                fontFamily: "Open Sans",
-                fontSize: "24px",
-                fontWeight: "600",
-              }}
-            >
-              {" "}
-              Socials
-            </h2>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                flexDirection: "row",
-                width: "20%",
-              }}
-            >
-              <a href="https://github.com/medhavi11">
-                <img
-                  src={github}
-                  style={{ height: "30px", width: "30px", cursor: "pointer" }}
-                  alt=""
-                />
-              </a>
-              <a href="https://www.linkedin.com/in/medhavibasera/">
-                <img
-                  src={Linkedin}
-                  style={{ height: "30px", width: "30px", cursor: "pointer" }}
-                  alt=""
-                />
-              </a>
+            <div className={contact.contactitemsocials}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  flexDirection: "row",
+                  width: "20%",
+                  marginTop: "20px",
+                  // left: "50%",
+                }}
+              >
+                <a href="https://github.com/medhavi11">
+                  <img
+                    src={github}
+                    style={{ height: "30px", width: "30px", cursor: "pointer" }}
+                    alt=""
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/medhavibasera/">
+                  <img
+                    src={Linkedin}
+                    style={{ height: "30px", width: "30px", cursor: "pointer" }}
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
           </Col>
         </Row>

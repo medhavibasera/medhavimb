@@ -23,8 +23,18 @@ class CardHoverMenus extends React.Component {
         {this.state.hiddenPopupMenu && (
           <div>
             <div className="mt-5 pt-5" />
-            <h1 style={{ fontFamily: "Open Sans" }}>{this.props.title}</h1>
-            <p>{this.props.description}</p>
+            <h1 style={{ fontFamily: "EB Garamond,Open Sans" }}>
+              {this.props.title}
+            </h1>
+            <p
+              style={{
+                fontFamily: "Open Sans",
+                fontSize: "14px",
+                fontWeight: "600",
+              }}
+            >
+              {this.props.description}
+            </p>
             <div className="Links">
               <img
                 src={github}

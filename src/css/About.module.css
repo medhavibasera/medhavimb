@@ -5,13 +5,14 @@ h1 {
 }
 .Aboutpage {
   min-height: 100vh !important;
-  box-shadow: 0px -18px 70px #ffed99 !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1600' height='1000' preserveAspectRatio='none' viewBox='0 0 1600 1000' style='user-select: auto%3b'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none' style='user-select: auto%3b'%3e%3cpath d='M-22.34 135.39C93.55 136.56 200.86 260.39 424.06 260.39 647.25 260.39 580.81 85.55 870.45 135.39 1160.1 185.23 1112.85 882.66 1316.85 1025.23' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2' style='user-select: auto%3b'%3e%3c/path%3e%3cpath d='M-148.43 384.55C38.58 389.2 148.14 626.81 549.42 654.55 950.7 682.29 1030.05 1156.06 1247.27 1185.02' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2' style='user-select: auto%3b'%3e%3c/path%3e%3cpath d='M-224.12 773.93C-21.39 754.14 109.17 322.71 455.13 323.93 801.09 325.15 895.81 976.34 1134.38 1037.68' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2' style='user-select: auto%3b'%3e%3c/path%3e%3cpath d='M-35.32 294.23C180.52 304.24 302.46 649.38 740.93 674.23 1179.41 699.08 1294.38 1101.14 1517.19 1116.28' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2' style='user-select: auto%3b'%3e%3c/path%3e%3cpath d='M-92.87 638.1C61.89 633.29 236.88 384.9 478.07 398.1 719.26 411.3 624.35 961.95 763.54 1085.42' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2' style='user-select: auto%3b'%3e%3c/path%3e%3c/g%3e%3cdefs style='user-select: auto%3b'%3e%3cmask id='SvgjsMask1002' style='user-select: auto%3b'%3e%3crect width='1600' height='1000' fill='white' style='user-select: auto%3b'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  /* box-shadow: 0px -18px 70px #fbf3ac !important; */
 }
 
 .Aboutpagecontainer {
   margin: 0px 0px !important;
   min-width: 100vw !important;
-  padding: 40px;
+  padding: 50px;
   min-height: 100vh !important;
 }
 
@@ -29,11 +30,11 @@ h1 {
   margin-top: 50px;
   margin-right: 40px;
   padding: 10px;
-  font-size: 22px;
-  font-weight: 520;
-  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Uchen", sans-serif;
   text-align: left;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 .Aboutpageresume {
   width: 60px;
@@ -44,8 +45,10 @@ h1 {
   box-shadow: 0 0 30px 30px #fff, 0 0 30px 30px #fbeeac, 0 0 30px 30px #0ff;
 }
 .Aboutpageexperience {
-  background-color: #8ac4d0;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23f9f871' stroke-width='8.2' stroke-opacity='0.89'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
   padding-bottom: 80px !important;
+  background-color: #fff;
   padding-top: 80px !important;
 }
 /* #476072 */

@@ -12,8 +12,14 @@ function Projects() {
     <div className="projectpage" name="project">
       <Container>
         <h1
-          // data-aos="fade-right"
-          style={{ marginBottom: "50px", marginTop: "50px", color: "#fff" }}
+          style={{
+            marginBottom: "50px",
+            marginTop: "50px",
+            fontFamily: "EB Garamond",
+            fontSize: "50px",
+            fontWeight: "900",
+            color: "#fff",
+          }}
         >
           .projects( )
         </h1>

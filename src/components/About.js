@@ -27,11 +27,14 @@ const About = () => {
     <div className={about.Aboutpage} name="about">
       <Container className={about.Aboutpagecontainer}>
         <h1
-          // data-aos="fade-right"
           style={{
             marginLeft: "8%",
             marginBottom: "40px",
             display: "inline-block",
+            // color: "#7C9473",
+            fontFamily: "EB Garamond",
+            fontSize: "50px",
+            fontWeight: "900",
           }}
         >
           .about( )
@@ -47,7 +50,7 @@ const About = () => {
           </Col>
           <Col className={about.Aboutpagediv}>
             <div data-aos="fade-up">
-              <p className={about.Aboutpageintro} >
+              <p className={about.Aboutpageintro}>
                 I am a passionate and creative developer from India with a
                 strong interest in Open source projects. I am currently pursuing
                 B.Tech in Computer Science and Engineering. I have been into
@@ -128,20 +131,30 @@ const About = () => {
       </Container>
       <div className={about.Aboutpageexperience} name="experience">
         <h1
-          style={{ textAlign: "center", marginBottom: "50px" }}
-          // data-aos="fade-right"
+          style={{
+            marginLeft: "8%",
+            marginBottom: "40px",
+            display: "inline-block",
+            fontFamily: "EB Garamond",
+            fontSize: "50px",
+            fontWeight: "900",
+          }}
         >
-          .experience()
+          .experience( )
         </h1>
         <VerticalTimeline style={{ marginBottom: "50p" }}>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="May 2021 - Present"
-            contentStyle={{ background: "#FBEEAC", color: "#000" }}
-            contentArrowStyle={{ borderRight: "7px solid  #FBEEAC" }}
-            iconStyle={{ background: "#D3E0EA", color: "#fff" }}
+            style={{ fontFamily: "Uchen" }}
+            // contentStyle={{ background: "#FBEEAC", color: "#000" }}
+            // contentArrowStyle={{ borderRight: "7px solid  #FBEEAC" }}
+            // iconStyle={{ background: "#D3E0EA", color: "#fff" }}
           >
-            <h3 className="vertical-timeline-element-title">
+            <h3
+              className="vertical-timeline-element-title"
+              style={{ fontWeight: "700" }}
+            >
               Web developer Intern
             </h3>
             <h4 className="vertical-timeline-element-subtitle">DoubtConnect</h4>
@@ -152,13 +165,17 @@ const About = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#FBEEAC", color: "#000" }}
-            contentArrowStyle={{ borderRight: "7px solid  #FBEEAC" }}
+            // contentStyle={{ background: "#FBEEAC", color: "#000" }}
+            // contentArrowStyle={{ borderRight: "7px solid  #FBEEAC" }}
             date="Feb 2021 - Present"
-            iconStyle={{ background: "#D3E0EA", color: "#000" }}
+            style={{ fontFamily: "Uchen" }}
+            // iconStyle={{ background: "#D3E0EA", color: "#000" }}
             //   icon={<WorkIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
+            <h3
+              className="vertical-timeline-element-title"
+              style={{ fontWeight: "700" }}
+            >
               Frontend Web Developer
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
@@ -168,25 +185,35 @@ const About = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#FBEEAC", color: "#000" }}
-            contentArrowStyle={{ borderRight: "7px solid  #FBEEAC" }}
+            style={{ fontFamily: "Uchen" }}
+            // contentStyle={{ background: "#FBEEAC", color: "#000" }}
+            // contentArrowStyle={{ borderRight: "7px solid  #FBEEAC" }}
             date="Nov 2020 - Jan 2021"
-            iconStyle={{ background: "#D3E0EA", color: "#fff" }}
+            // iconStyle={{ background: "#D3E0EA", color: "#fff" }}
             //   icon={<WorkIcon />}
           >
-            <h3 className="vertical-timeline-element-title">Executive</h3>
+            <h3
+              className="vertical-timeline-element-title"
+              style={{ fontWeight: "700" }}
+            >
+              Executive
+            </h3>
             <h4 className="vertical-timeline-element-subtitle">KIIT E-CELL</h4>
             <p>Part of organizing committee of Hult Prize 2020.</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            contentStyle={{ background: "#FBEEAC", color: "#000" }}
-            contentArrowStyle={{ borderRight: "7px solid  #FBEEAC" }}
+            style={{ fontFamily: "Uchen" }}
+            // contentStyle={{ background: "#FBEEAC", color: "#000" }}
+            // contentArrowStyle={{ borderRight: "7px solid  #FBEEAC" }}
             date="Feb 2020 - Nov 2020"
-            iconStyle={{ background: "#D3E0EA", color: "#fff" }}
+            // iconStyle={{ background: "#D3E0EA", color: "#fff" }}
             //   icon={<SchoolIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
+            <h3
+              className="vertical-timeline-element-title"
+              style={{ fontWeight: "700" }}
+            >
               Junior Executive
             </h3>
             <h4 className="vertical-timeline-element-subtitle">KIIT E-CELL</h4>

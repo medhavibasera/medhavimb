@@ -1,7 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Bevan&family=Open+Sans:wght@300;600;800&display=swap");
 .contactpage {
   min-height: 80vh !important;
-  background-color: #fdffbc;
-  padding-bottom: 40px;
-  
+  padding-bottom: 60px;
+}
+
+.btncolor {
+  background-color: #6e7c7c !important;
+  border: #6e7c7c !important;
+}
+
+.contactitems {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 20px 0px;
+}
+
+.contactitemsocials {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 757px) {
+  .contactitems {
+    justify-content: center;
+  }
+
+  .contactitemsocials {
+    justify-content: center;
+  }
 }

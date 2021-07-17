@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import landingimg from "../images/Landing-img.png";
 import Lottie from "react-lottie";
 // npm install --save react-lottie --legacy-peer-deps
-import animationData from "../images/galaxy-blob.json";
+import animationData from "../images/lottie.json";
 function LandingPage() {
   const defaultOptions = {
     loop: true,
