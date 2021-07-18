@@ -16,29 +16,26 @@ export default function Contact() {
   const [name, setnameboolean] = useState(false);
   const [email, setemailboolean] = useState(false);
   const [message, setmessageboolean] = useState(false);
-
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
+  const [enteredUsername, setEnteredUsername] = useState("");
+  const [enteredemail, setEnteredemail] = useState("");
+  const [enteredmessage, setEnteredmessage] = useState("");
 
   const isentername = (event) => {
     if (event.target.value.trim().length > 0) {
       setnameboolean(true);
+      setEnteredUsername(event.target.value);
     }
   };
   const isenteremail = (event) => {
     if (event.target.value.trim().length > 0) {
       setemailboolean(true);
+      setEnteredemail(event.target.value);
     }
   };
   const isentermessage = (event) => {
     if (event.target.value.trim().length > 0) {
       setmessageboolean(true);
+      setEnteredmessage(event.target.value);
     }
   };
 
@@ -58,6 +55,9 @@ export default function Contact() {
         console.log(res);
       })
       .catch((err) => console.log(err));
+    setEnteredUsername("");
+    setEnteredemail("");
+    setEnteredmessage("");
   }
 
   function displaymessage() {
@@ -115,6 +115,7 @@ export default function Contact() {
                     type="text"
                     name="name"
                     placeholder="👩🏻"
+                    value={enteredUsername}
                     onChange={isentername}
                   />
                 </Form.Group>
@@ -124,6 +125,7 @@ export default function Contact() {
                     type="email"
                     name="user-email"
                     placeholder="📧"
+                    value={enteredemail}
                     onChange={isenteremail}
                   />
                 </Form.Group>
@@ -135,6 +137,7 @@ export default function Contact() {
                     name="message"
                     placeholder="📨"
                     rows={3}
+                    value={enteredmessage}
                     onChange={isentermessage}
                   />
                 </Form.Group>
