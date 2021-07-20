@@ -23,20 +23,20 @@ export default function Contact() {
   const isentername = (event) => {
     if (event.target.value.trim().length > 0) {
       setnameboolean(true);
-      setEnteredUsername(event.target.value);
     }
+    setEnteredUsername(event.target.value);
   };
   const isenteremail = (event) => {
     if (event.target.value.trim().length > 0) {
       setemailboolean(true);
-      setEnteredemail(event.target.value);
     }
+    setEnteredemail(event.target.value);
   };
   const isentermessage = (event) => {
     if (event.target.value.trim().length > 0) {
       setmessageboolean(true);
-      setEnteredmessage(event.target.value);
     }
+    setEnteredmessage(event.target.value);
   };
 
   useEffect(() => {
@@ -44,20 +44,25 @@ export default function Contact() {
   }, []);
   function sendEmail(e) {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_t6blyra",
-        "template_4xo76cl",
-        e.target,
-        "user_H34d8USbcfa1e9x5idUsk"
-      )
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => console.log(err));
+    if (name && email && message) {
+      emailjs
+        .sendForm(
+          "service_t6blyra",
+          "template_4xo76cl",
+          e.target,
+          "user_H34d8USbcfa1e9x5idUsk"
+        )
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => console.log(err));
+    }
     setEnteredUsername("");
     setEnteredemail("");
     setEnteredmessage("");
+    setnameboolean(false);
+    setemailboolean(false);
+    setmessageboolean(false);
   }
 
   function displaymessage() {
@@ -65,11 +70,19 @@ export default function Contact() {
       setdisplay(true);
       settext("Submitted");
     }
-    console.log(name);
-    console.log(email);
-    console.log(message);
-    console.log(displays);
+    // console.log(name);
+    // console.log(email);
+    // console.log(message);
+    // console.log(displays);
   }
+  // console.log(name);
+  // console.log(email);
+  // console.log(message);
+  // console.log(displays);
+  console.log(enteredUsername);
+  console.log(enteredemail);
+  console.log(enteredmessage);
+
   return (
     <div className={contact.contactpage} name="contact">
       <Container className={contact.contactpagecontainer}>
@@ -98,12 +111,12 @@ export default function Contact() {
               }}
             >
               <Form onSubmit={sendEmail}>
-                {displays && name && email && message ? (
+                {displays ? (
                   <p
                     style={{
                       color: "#93D9A3",
                       fontSize: "15px",
-                      fontWeight:"600"
+                      fontWeight: "600",
                     }}
                   >
                     Success !
