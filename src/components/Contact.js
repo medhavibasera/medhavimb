@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import emailjs from "emailjs-com";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import contact from "../css/Contact.module.css";
+import Alert from "./Alert.js";
 
 import mail from "../images/gmail.png";
 import github from "../images/github-logo-square.png";
@@ -11,8 +12,6 @@ import Linkedin from "../images/linkedin.png";
 import location from "../images/location.png";
 
 export default function Contact() {
-  const [text, settext] = useState("Submit");
-  const [displays, setdisplay] = useState(false);
   const [name, setnameboolean] = useState(false);
   const [email, setemailboolean] = useState(false);
   const [message, setmessageboolean] = useState(false);
@@ -23,18 +22,24 @@ export default function Contact() {
   const isentername = (event) => {
     if (event.target.value.trim().length > 0) {
       setnameboolean(true);
+    } else {
+      setnameboolean(false);
     }
     setEnteredUsername(event.target.value);
   };
   const isenteremail = (event) => {
     if (event.target.value.trim().length > 0) {
       setemailboolean(true);
+    } else {
+      setemailboolean(false);
     }
     setEnteredemail(event.target.value);
   };
   const isentermessage = (event) => {
     if (event.target.value.trim().length > 0) {
       setmessageboolean(true);
+    } else {
+      setmessageboolean(false);
     }
     setEnteredmessage(event.target.value);
   };
@@ -65,23 +70,9 @@ export default function Contact() {
     setmessageboolean(false);
   }
 
-  function displaymessage() {
-    if (name && email && message) {
-      setdisplay(true);
-      settext("Submitted");
-    }
-    // console.log(name);
-    // console.log(email);
-    // console.log(message);
-    // console.log(displays);
-  }
-  // console.log(name);
-  // console.log(email);
-  // console.log(message);
-  // console.log(displays);
-  console.log(enteredUsername);
-  console.log(enteredemail);
-  console.log(enteredmessage);
+  console.log("name:", name);
+  console.log("email:", email);
+  console.log("msg:", message);
 
   return (
     <div className={contact.contactpage} name="contact">
@@ -111,18 +102,6 @@ export default function Contact() {
               }}
             >
               <Form onSubmit={sendEmail}>
-                {displays ? (
-                  <p
-                    style={{
-                      color: "#93D9A3",
-                      fontSize: "15px",
-                      fontWeight: "600",
-                    }}
-                  >
-                    Success !
-                  </p>
-                ) : null}
-
                 <Form.Group controlId="exampleForm.ControlInput1">
                   <Form.Label>Name</Form.Label>
                   <Form.Control
@@ -155,17 +134,8 @@ export default function Contact() {
                     onChange={isentermessage}
                   />
                 </Form.Group>
-                <Button
-                  variant="primary"
-                  type="submit"
-                  value="Send"
-                  onClick={displaymessage}
-                  className={`${
-                    name && email && message && displays && contact.btncolor
-                  } ${contact.btn}`}
-                >
-                  {text}
-                </Button>
+
+                <Alert bool1={name} bool2={email} bool3={message} />
               </Form>
             </div>
           </Col>
