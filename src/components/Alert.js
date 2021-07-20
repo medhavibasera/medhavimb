@@ -50,10 +50,14 @@ export default function CustomizedSnackbars(props) {
       <Snackbar open={open} autoHideDuration={2000} onClose={handleClose}>
         {props.bool1 && props.bool2 && props.bool3 ? (
           <Alert onClose={handleClose} severity="success">
+            {/* {console.log("true")} */}
             This is a success message!
           </Alert>
         ) : (
-          <Alert severity="error">Please enter valid input!</Alert>
+          <Alert severity="error">
+            {/* {console.log("false")} */}
+            Please enter valid input!
+          </Alert>
         )}
       </Snackbar>
     </div>

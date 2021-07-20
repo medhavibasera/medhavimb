@@ -65,14 +65,14 @@ export default function Contact() {
     setEnteredUsername("");
     setEnteredemail("");
     setEnteredmessage("");
-    setnameboolean(false);
-    setemailboolean(false);
-    setmessageboolean(false);
+    // setnameboolean(false);
+    // setemailboolean(false);
+    // setmessageboolean(false);
   }
 
-  console.log("name:", name);
-  console.log("email:", email);
-  console.log("msg:", message);
+  // console.log("name:", name);
+  // console.log("email:", email);
+  // console.log("msg:", message);
 
   return (
     <div className={contact.contactpage} name="contact">
