@@ -89,9 +89,9 @@ export default function Contact() {
         <Row xs={1} md={2}>
           <Col className={contact.contactpagediv}>
             <div
-              className="forms"
+              // className="forms"
+              className={contact.forms}
               style={{
-                background: "#053742",
                 color: "#fff",
                 padding: "20px",
                 borderRadius: "20px",
@@ -103,6 +103,7 @@ export default function Contact() {
                     style={{
                       color: "#93D9A3",
                       fontSize: "15px",
+                      fontWeight:"600"
                     }}
                   >
                     Success !
@@ -148,7 +149,7 @@ export default function Contact() {
                   onClick={displaymessage}
                   className={`${
                     name && email && message && displays && contact.btncolor
-                  }`}
+                  } ${contact.btn}`}
                 >
                   {text}
                 </Button>
