@@ -51,12 +51,12 @@ export default function CustomizedSnackbars(props) {
         {props.bool1 && props.bool2 && props.bool3 ? (
           <Alert onClose={handleClose} severity="success">
             {/* {console.log("true")} */}
-            This is a success message!
+            Message sent successfully !
           </Alert>
         ) : (
           <Alert severity="error">
             {/* {console.log("false")} */}
-            Please enter valid input!
+            Parameter missing ! Sending Failed.
           </Alert>
         )}
       </Snackbar>
