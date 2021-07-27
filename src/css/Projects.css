@@ -156,7 +156,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   opacity: 0.4;
@@ -171,13 +171,25 @@
   transform: translate((-50%, -50%));
   object-fit: cover; */
 }
-@media (max-width: 350px) {
+/* @media (max-width: 350px) {
   .card {
     font-size: 1em;
     overflow: hidden;
     width: 90% !important;
     border-radius: 30px !important;
     height: 190px !important;
+  }
+  .whenhovered {
+    display: none;
+  }
+} */
+@media only screen and (min-width: 540px) and (max-width: 1024px) {
+  .card {
+    font-size: 1em;
+    overflow: hidden;
+    width: 90% !important;
+    border-radius: 30px !important;
+    height: auto !important;
   }
   .whenhovered {
     display: none;
@@ -193,5 +205,12 @@
   }
   .whenhovered {
     display: none;
+  }
+}
+@media (max-width: 1024px) {
+  #video {
+    display: none;
+    height: 0% !important;
+    width: 0% !important;
   }
 }
