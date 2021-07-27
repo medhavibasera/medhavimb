@@ -10,6 +10,7 @@ export default function Footer() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        position:"relative"
       }}
     >
       <p

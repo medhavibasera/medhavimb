@@ -15,7 +15,14 @@ function LandingPage() {
     },
   };
   return (
-    <div name="landing">
+    <div
+      name="landing"
+      style={{
+        backgroundColor: "#fff",
+        position: "relative",
+        zIndex: "10",
+      }}
+    >
       <Container className={landing.Landingpage}>
         <Row xs={1} md={2}>
           <Col

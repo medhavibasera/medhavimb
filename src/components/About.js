@@ -17,7 +17,6 @@ import firebase from "../images/logo-firebase-icon.png";
 import nodejs from "../images/Nodejs.png";
 import mongodb from "../images/mongodb.png";
 import git from "../images/Git-Icon-1788C.png";
-import myresume from "../images/Medhavi_Resume.pdf";
 
 const About = () => {
   useEffect(() => {
@@ -117,7 +116,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <a href={myresume} download="MedhaviBasera_Resume.pdf">
+              <a href="https://drive.google.com/file/d/1uWlj-Rx4qoRapJLOk_Wq-7FG0n0dXz-j/view?usp=sharing" download="MedhaviBasera_Resume.pdf">
                 <img
                   src={resume}
                   className={about.Aboutpageresume}

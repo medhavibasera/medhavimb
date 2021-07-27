@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bevan&family=Open+Sans:wght@300;600;800&display=swap");
 .Landingpage {
   min-height: 86vh !important;
+  /* background-color: #fff !important;
+  position: relative !important;
+  z-index: 10; */
 }
 .Landingpageimg {
   height: 600px;

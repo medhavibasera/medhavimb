@@ -6,7 +6,13 @@ import { Link } from "react-scroll";
 import styles from "../css/Navbar.module.css";
 function Navbars() {
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "#fff",
+        position: "relative",
+        zIndex: "10",
+      }}
+    >
       <Navbar expand="lg" className={styles.nav}>
         <Navbar.Brand href="#home">
           <img src={icon} alt="" className={styles.icons} />

@@ -4,7 +4,10 @@ h1 {
   font-family: "Bevan", sans-serif;
 }
 .Aboutpage {
+  position: relative !important;
+  z-index: 10;
   min-height: 100vh !important;
+  background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1600' height='1000' preserveAspectRatio='none' viewBox='0 0 1600 1000' style='user-select: auto%3b'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none' style='user-select: auto%3b'%3e%3cpath d='M-22.34 135.39C93.55 136.56 200.86 260.39 424.06 260.39 647.25 260.39 580.81 85.55 870.45 135.39 1160.1 185.23 1112.85 882.66 1316.85 1025.23' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2' style='user-select: auto%3b'%3e%3c/path%3e%3cpath d='M-148.43 384.55C38.58 389.2 148.14 626.81 549.42 654.55 950.7 682.29 1030.05 1156.06 1247.27 1185.02' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2' style='user-select: auto%3b'%3e%3c/path%3e%3cpath d='M-224.12 773.93C-21.39 754.14 109.17 322.71 455.13 323.93 801.09 325.15 895.81 976.34 1134.38 1037.68' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2' style='user-select: auto%3b'%3e%3c/path%3e%3cpath d='M-35.32 294.23C180.52 304.24 302.46 649.38 740.93 674.23 1179.41 699.08 1294.38 1101.14 1517.19 1116.28' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2' style='user-select: auto%3b'%3e%3c/path%3e%3cpath d='M-92.87 638.1C61.89 633.29 236.88 384.9 478.07 398.1 719.26 411.3 624.35 961.95 763.54 1085.42' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2' style='user-select: auto%3b'%3e%3c/path%3e%3c/g%3e%3cdefs style='user-select: auto%3b'%3e%3cmask id='SvgjsMask1002' style='user-select: auto%3b'%3e%3crect width='1600' height='1000' fill='white' style='user-select: auto%3b'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   /* box-shadow: 0px -18px 70px #fbf3ac !important; */
 }
