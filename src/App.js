@@ -15,6 +15,7 @@ function App() {
   }, []);
 
   return (
+    
     <>
       {loading ? (
         <div
@@ -24,6 +25,7 @@ function App() {
             justifyContent: "center",
             alignItems: "center",
           }}
+          className="gradient-background"
         >
           <Preloader />
         </div>

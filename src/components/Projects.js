@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import style from "../css/Projects.css";
+import  "../css/Projects.css";
 import Cards from "./Cards";
 
 import background from "../images/woman-typing.mp4";

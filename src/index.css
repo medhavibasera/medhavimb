@@ -27,3 +27,32 @@ html::-webkit-scrollbar-thumb {
   box-shadow: 0px 0px 0px 100vh #eeeeee;
   border-radius: 100px;
 }
+
+.gradient-background {
+  height: 600px;
+  background: linear-gradient(62deg, #fff, #e73c7e, #23a6d5, #fff, #fff);
+  animation: gradient 16s ease infinite;
+  background-size: 400% 400%;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

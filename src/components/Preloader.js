@@ -12,7 +12,8 @@ export default function Preloader() {
     },
   };
   return (
-    <div id="preloader">
+    <div id="preloader" >
+    
       <Lottie options={defaultOptions} height="70%" width="70%" />
     </div>
   );
