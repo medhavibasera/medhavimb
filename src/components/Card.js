@@ -4,6 +4,8 @@ import CardHoverMenus from "./CardHoverMenu/CardHoverMenu";
 import ExpenseTracker from "../images/expenseTracker.png";
 import Screenrecorder from "../images/ScreenRecorder.png";
 import Codeinturns from "../images/CodeinTurns.jpeg";
+import Techcolumns from "../images/Techcolumns.png";
+
 import Msac from "../images/msac1.png";
 import db from "../images/DoubtConnect.png";
 
@@ -12,6 +14,30 @@ class Card extends React.Component {
   render() {
     return (
       <div className="row cards-placement">
+        <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
+          <a
+            href="https://tech-columns.netlify.app/"
+            className="cards-placement"
+          >
+            <div className="card " data-aos="zoom-in">
+              <img
+                alt="random pic"
+                className="card-img-top"
+                src={Techcolumns}
+                style={{ minWidth: 300, minHeight: 100 }}
+              />
+              <CardHoverMenus
+                flashFn={this.props.flashFn}
+                title="TechColumns"
+                description="A platform that brings you the journey of every seniors that was once a fresher. 
+                Weekly blogs interviewing 
+                college students who have explored the domain well enough.
+                 Each blog is a storehouse to important links to courses, 
+                 tips and tricks suggested by the interviewee !!!"
+              />
+            </div>
+          </a>
+        </div>
         <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
           <a
             href="https://github.com/medhavi11/Expense-Tracker"
@@ -54,23 +80,7 @@ Filter by year helps you to ,find your expenses for that year across different m
             </div>
           </a>
         </div>
-        <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
-          <a href="https://codeinturns.tech/" className="cards-placement">
-            <div className="card " data-aos="zoom-in">
-              <img
-                alt="random pic"
-                className="card-img-top"
-                src={Codeinturns}
-                style={{ minWidth: 300, minHeight: 100 }}
-              />
-              <CardHoverMenus
-                title="Code-In-Turns"
-                description="A collaborated project website made for Code-In-Turns hackathon."
-                flashFn={this.props.flashFn}
-              />
-            </div>
-          </a>
-        </div>
+
         <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
           <a href="https://msackiit.tech/" className="cards-placement">
             {" "}
@@ -92,7 +102,7 @@ Filter by year helps you to ,find your expenses for that year across different m
         <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
           <a href="https://doubtconnect.in/" className="cards-placement">
             {" "}
-            <div className="card " data-aos="zoom-in">
+            <div className="card" data-aos="zoom-in">
               <img
                 alt="random pic"
                 className="card-img-top"
@@ -102,6 +112,23 @@ Filter by year helps you to ,find your expenses for that year across different m
               <CardHoverMenus
                 title="DoubtConnect Official Website"
                 description="A website made for mumbai based Ed-tech startup."
+                flashFn={this.props.flashFn}
+              />
+            </div>
+          </a>
+        </div>
+        <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
+          <a href="https://codeinturns.tech/" className="cards-placement">
+            <div className="card " data-aos="zoom-in">
+              <img
+                alt="random pic"
+                className="card-img-top"
+                src={Codeinturns}
+                style={{ minWidth: 300, minHeight: 100 }}
+              />
+              <CardHoverMenus
+                title="Code-In-Turns"
+                description="A collaborated project website made for Code-In-Turns hackathon."
                 flashFn={this.props.flashFn}
               />
             </div>

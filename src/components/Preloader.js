@@ -12,8 +12,7 @@ export default function Preloader() {
     },
   };
   return (
-    <div id="preloader" >
-    
+    <div id="preloader" style={{ pointerEvents: "none" }}>
       <Lottie options={defaultOptions} height="70%" width="70%" />
     </div>
   );

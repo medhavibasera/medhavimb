@@ -38,6 +38,7 @@ h1 {
   font-family: "Uchen", sans-serif;
   text-align: left;
   line-height: 1.8;
+  
 }
 .Aboutpageresume {
   width: 60px;
@@ -45,7 +46,10 @@ h1 {
 }
 .Aboutpageresume:hover {
   cursor: pointer;
-  box-shadow: 0 0 30px 30px #fff, 0 0 30px 30px #fbeeac, 0 0 30px 30px #0ff;
+  transform: scale(1.1) !important;
+  transition: all 0.3s !important;
+
+  /* box-shadow: 0 0 10px 10px #fff, 0 0 15px 15px #fbeeac, 0 0 17px 17px #0ff; */
 }
 .Aboutpageexperience {
   background-color: #ffffff;

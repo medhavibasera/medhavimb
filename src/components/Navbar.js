@@ -12,6 +12,7 @@ function Navbars() {
         position: "relative",
         zIndex: "10",
       }}
+      className={styles.navbox}
     >
       <Navbar expand="lg" className={styles.nav}>
         <Navbar.Brand href="#home">

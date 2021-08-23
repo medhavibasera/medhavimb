@@ -30,3 +30,13 @@
     padding-right: 50px !important;
   }
 }
+@media (max-width: 989px) {
+  .navbox {
+    position: fixed !important;
+    z-index: 200000 !important;
+    width: 100% !important;
+  }
+   .navbar {
+    padding: 0rem 1rem !important;
+  }
+}

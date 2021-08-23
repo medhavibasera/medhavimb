@@ -116,7 +116,10 @@ const About = () => {
               </p>
             </div>
             <div>
-              <a href="https://drive.google.com/file/d/1uWlj-Rx4qoRapJLOk_Wq-7FG0n0dXz-j/view?usp=sharing" download="MedhaviBasera_Resume.pdf">
+              <a
+                href="https://drive.google.com/file/d/1uWlj-Rx4qoRapJLOk_Wq-7FG0n0dXz-j/view?usp=sharing"
+                download="MedhaviBasera_Resume.pdf"
+              >
                 <img
                   src={resume}
                   className={about.Aboutpageresume}
@@ -144,26 +147,6 @@ const About = () => {
         <VerticalTimeline style={{ marginBottom: "50p" }}>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="May 2021 - Present"
-            style={{ fontFamily: "Uchen" }}
-            // contentStyle={{ background: "#FBEEAC", color: "#000" }}
-            // contentArrowStyle={{ borderRight: "7px solid  #FBEEAC" }}
-            // iconStyle={{ background: "#D3E0EA", color: "#fff" }}
-          >
-            <h3
-              className="vertical-timeline-element-title"
-              style={{ fontWeight: "700" }}
-            >
-              Web developer Intern
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">DoubtConnect</h4>
-            <p>
-              Developing an Ed-Tech platform with real-time audio and video
-              interaction.
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
             // contentStyle={{ background: "#FBEEAC", color: "#000" }}
             // contentArrowStyle={{ borderRight: "7px solid  #FBEEAC" }}
             date="Feb 2021 - Present"
@@ -182,6 +165,27 @@ const About = () => {
             </h4>
             <p>Developed website for various Hackathon and events.</p>
           </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="May 2021 - August 2021"
+            style={{ fontFamily: "Uchen" }}
+            // contentStyle={{ background: "#FBEEAC", color: "#000" }}
+            // contentArrowStyle={{ borderRight: "7px solid  #FBEEAC" }}
+            // iconStyle={{ background: "#D3E0EA", color: "#fff" }}
+          >
+            <h3
+              className="vertical-timeline-element-title"
+              style={{ fontWeight: "700" }}
+            >
+              Web developer Intern
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">DoubtConnect</h4>
+            <p>
+              Developing an Ed-Tech platform with real-time audio and video
+              interaction.
+            </p>
+          </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             style={{ fontFamily: "Uchen" }}

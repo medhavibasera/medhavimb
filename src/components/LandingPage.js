@@ -52,7 +52,12 @@ function LandingPage() {
               <img src={landingimg} className={landing.Landingpageimg} alt="" />
             </div>
 
-            <Lottie options={defaultOptions} height="600px" width="100%" />
+            <Lottie
+              options={defaultOptions}
+              height="600px"
+              width="100%"
+              style={{ pointerEvents: "none" }}
+            />
           </Col>
         </Row>
       </Container>

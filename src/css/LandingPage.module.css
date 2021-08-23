@@ -23,11 +23,13 @@
   background: #f9f871;
   padding: 0px 20px;
 }
+
 @media (max-width: 764px) {
   .LandingPageimgsec {
     height: 0px !important;
     display: none !important;
   }
+
   .Landingpage {
     min-height: 65vh !important;
   }
@@ -44,5 +46,8 @@
     right: 0%;
     position: absolute;
     z-index: 1;
+  }
+  .Landingpage {
+    padding-top: 140px !important;
   }
 }
