@@ -1,5 +1,7 @@
 import React from "react";
 import github from "../../images/github-1.png";
+import website from "../../images/domain1.png";
+
 const evStop = (ev) => {
   ev.preventDefault();
   ev.stopPropagation();
@@ -41,7 +43,7 @@ class CardHoverMenus extends React.Component {
             </p>
             <div className="Links">
               <img
-                src={github}
+                src={website}
                 alt=""
                 style={{
                   width: "26px",

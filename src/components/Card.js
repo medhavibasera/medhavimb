@@ -5,7 +5,6 @@ import ExpenseTracker from "../images/expenseTracker.png";
 import Screenrecorder from "../images/ScreenRecorder.png";
 import Codeinturns from "../images/CodeinTurns.jpeg";
 import Techcolumns from "../images/Techcolumns.png";
-
 import Msac from "../images/msac1.png";
 import db from "../images/DoubtConnect.png";
 
@@ -29,7 +28,7 @@ class Card extends React.Component {
               <CardHoverMenus
                 flashFn={this.props.flashFn}
                 title="TechColumns"
-                description="A platform that brings you the journey of every seniors that was once a fresher. 
+                description="A platform that brings you the journey of every senior who was once a fresher. 
                 Weekly blogs interviewing 
                 college students who have explored the domain well enough.
                  Each blog is a storehouse to important links to courses, 
