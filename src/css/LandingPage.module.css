@@ -15,6 +15,22 @@
 .Landingpageheader {
   font-family: "Bevan", sans-serif;
   font-size: 75px;
+  /* background-color: black; */
+  opacity: 1;
+  /* background: url(../images/black4.jpeg);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 140s linear infinite; */
+}
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: -10000px 0;
+  }
 }
 .Landingpagedesc {
   font-size: 30px;

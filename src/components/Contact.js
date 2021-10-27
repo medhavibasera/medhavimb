@@ -6,10 +6,12 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 import contact from "../css/Contact.module.css";
 import Alert from "./Alert.js";
 
+import hi from "../images/hi.png";
 import mail from "../images/gmail.png";
 import github from "../images/github-logo-square.png";
 import Linkedin from "../images/linkedin.png";
 import location from "../images/location.png";
+import { Divider } from "@material-ui/core";
 
 export default function Contact() {
   const [name, setnameboolean] = useState(false);
@@ -144,10 +146,15 @@ export default function Contact() {
             style={{
               display: "flex",
               flexDirection: "column",
-              marginTop: "10%",
               width: "100%",
+              // backgroundColor: "red",
             }}
           >
+            <div className={contact.hi}>
+              <div className={contact.bk}>
+                <img className={contact.hiimg} src={hi} alt="" />
+              </div>
+            </div>
             <div className={contact.contactitems}>
               <img
                 src={location}
@@ -156,7 +163,7 @@ export default function Contact() {
               />
               <span
                 style={{
-                  fontSize: "20px",
+                  fontSize: "18px",
                   fontFamily: "Uchen",
                   fontWeight: "600",
                   paddingLeft: "10px",
@@ -178,7 +185,7 @@ export default function Contact() {
 
               <span
                 style={{
-                  fontSize: "20px",
+                  fontSize: "18px",
                   textAlign: "right",
                   fontWeight: "600",
                   paddingLeft: "10px",

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
@@ -7,6 +8,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
+import Books from "./components/Books";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -15,7 +17,6 @@ function App() {
   }, []);
 
   return (
-    
     <>
       {loading ? (
         <div

@@ -181,7 +181,7 @@ const About = () => {
             </h3>
             <h4 className="vertical-timeline-element-subtitle">DoubtConnect</h4>
             <p>
-              Developing an Ed-Tech platform with real-time audio and video
+              Developed an Ed-Tech platform with real-time audio and video
               interaction.
             </p>
           </VerticalTimelineElement>
