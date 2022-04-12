@@ -3,7 +3,6 @@ import landing from "../css/LandingPage.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import landingimg from "../images/Landing-img.png";
 import Lottie from "react-lottie";
-// npm install --save react-lottie --legacy-peer-deps
 import animationData from "../images/lottie.json";
 function LandingPage() {
   const defaultOptions = {
@@ -23,7 +22,7 @@ function LandingPage() {
         zIndex: "10",
       }}
     >
-      <Container className={landing.Landingpage}>
+      <Container className={landing.LandingPage}>
         <Row xs={1} md={2}>
           <Col
             style={{
@@ -33,18 +32,14 @@ function LandingPage() {
               flexDirection: "column",
             }}
           >
-            {/* style={{ backgroundColor: "red" }} */}
             <h1 className={landing.Landingpageheader}>
               Hello, <br />
               I'm
               <br /> Medhavi Basera.
               <br />
             </h1>
-            <p
-              className={landing.Landingpagedesc}
-              style={{ textAlign: "left", background: "yellow", padding: "" }}
-            >
-              I'm a full-stack web developer
+            <p className={landing.LandingPageDesc}>
+              I'm a Full-stack Web Developer
             </p>
           </Col>
           <Col className={landing.LandingPageimgsec}>

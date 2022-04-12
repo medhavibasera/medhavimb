@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
 .icons {
-  height: 80px;
-  width: 30px;
+  height: 60px;
+  width: 20px;
 }
 .navitems {
   justify-content: space-between !important;
+  font-family: "Ubuntu", sans-serif;
 }
 .navitemslist:hover {
   color: #053742 !important;
@@ -36,7 +39,7 @@
     z-index: 200000 !important;
     width: 100% !important;
   }
-   .navbar {
+  .navbar {
     padding: 0rem 1rem !important;
   }
 }

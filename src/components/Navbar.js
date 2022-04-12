@@ -2,7 +2,6 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import icon from "../images/icons.png";
 import { Link } from "react-scroll";
-
 import styles from "../css/Navbar.module.css";
 function Navbars() {
   return (
@@ -18,8 +17,7 @@ function Navbars() {
         <Navbar.Brand href="#home">
           <img src={icon} alt="" className={styles.icons} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        {/* <Navbar.Collapse id="basic-navbar-nav">
           <Nav className={styles.navitems}>
             <Link to="about" smooth={true}>
               <Nav.Link className={styles.navitemslist}>.about( )</Nav.Link>
@@ -36,7 +34,7 @@ function Navbars() {
               <Nav.Link className={styles.navitemslist}>.contact( )</Nav.Link>
             </Link>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
       </Navbar>
     </div>
   );

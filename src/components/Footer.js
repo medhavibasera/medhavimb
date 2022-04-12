@@ -1,36 +1,21 @@
 import React from "react";
-import heart from "../images/heart.png";
-import program from "../images/programming.png";
+import heart from "../images/heart-svgrepo-com.svg";
+import build from "../images/build-svgrepo-com.svg";
+import music from "../images/music-3-svgrepo-com.svg";
+import footer from "../css/Footer.module.css";
+
 export default function Footer() {
+  const current = new Date();
+  const year = `${current.getFullYear()}`;
+
   return (
-    <div
-      style={{
-        minHeight: "8vh",
-        backgroundColor: "#000",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        position:"relative"
-      }}
-    >
-      <p
-        style={{
-          color: "#fff",
-        }}
-      >
+    <div className={footer.footerContainer}>
+      <p>
         {" "}
-        <img
-          src={program}
-          alt=""
-          style={{ margin: "0px 4px", width: "24px", height: "24px" }}
-        />{" "}
-        with{" "}
-        <img
-          src={heart}
-          alt=""
-          style={{ margin: "0px 4px", width: "24px", height: "24px" }}
-        />{" "}
-        by Medhavi Basera | © 2021
+        <img src={build} alt="" className={footer.footerIcons} /> with{" "}
+        <img src={heart} alt="" className={footer.footerIcons} /> and{" "}
+        <img src={music} alt="" className={footer.footerIcons} /> by Medhavi
+        Basera | © {year}
       </p>
     </div>
   );

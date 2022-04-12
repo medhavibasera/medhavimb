@@ -24,19 +24,20 @@ class CardHoverMenus extends React.Component {
       <div className="whenhovered" onClick={this.toggle}>
         {this.state.hiddenPopupMenu && (
           <div>
-            <div className="mt-5 pt-5" />
+            <div className=" pt-5" />
             <h1
               style={{
-                fontFamily: "EB Garamond,Open Sans",
+                fontFamily: "Ubuntu,Open Sans",
+                fontWeight: "800",
               }}
             >
               {this.props.title}
             </h1>
             <p
               style={{
-                fontFamily: "Open Sans",
+                fontFamily: "Ubuntu",
                 fontSize: "14px",
-                fontWeight: "600",
+                fontWeight: "400",
               }}
             >
               {this.props.description}

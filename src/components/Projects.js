@@ -4,7 +4,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "../css/Projects.css";
 import Cards from "./Cards";
-
 import background from "../images/woman-typing.mp4";
 
 function Projects() {
@@ -21,8 +20,8 @@ function Projects() {
           style={{
             marginBottom: "50px",
             marginTop: "50px",
-            fontFamily: "EB Garamond",
-            fontSize: "50px",
+            fontFamily: "Ubuntu",
+            fontSize: "40px",
             fontWeight: "900",
             color: "#fff",
             zIndex: "10",

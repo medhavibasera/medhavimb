@@ -1,11 +1,8 @@
 import React from "react";
 import CardHoverMenus from "./CardHoverMenu/CardHoverMenu";
-// // import screenrecorder from "../images/ScreenRecorder.png"
-import ExpenseTracker from "../images/expenseTracker.png";
-import Screenrecorder from "../images/ScreenRecorder.png";
-import Codeinturns from "../images/CodeinTurns.jpeg";
-import Techcolumns from "../images/Techcolumns.png";
-import Msac from "../images/msac1.png";
+import Blumea from "../images/Blumea.png";
+import Qode from "../images/qode.png";
+import Techcolumns from "../images/TechColumns.png";
 import db from "../images/DoubtConnect.png";
 
 //----====---------------------------------------------------
@@ -39,40 +36,38 @@ class Card extends React.Component {
         </div>
         <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
           <a
-            href="https://github.com/medhavi11/Expense-Tracker"
+            href="https://01399f4e.msc-codeportal.pages.dev/"
             className="cards-placement"
           >
             <div className="card " data-aos="zoom-in">
               <img
-                alt="random pic"
+                alt="Qode img"
                 className="card-img-top"
-                src={ExpenseTracker}
+                src={Qode}
                 style={{ minWidth: 300, minHeight: 100 }}
               />
               <CardHoverMenus
                 flashFn={this.props.flashFn}
-                title="ExpenseTracker"
-                description="The application helps you track your expenses for different years.
-You can add the item along with their cost and date purchased.
-Filter by year helps you to ,find your expenses for that year across different months through the expenses bar"
+                title="Qode"
+                description="Qode is a great source for you to learn and follow as a self-paced course. It has full-feldged IDE which supports C, C++, Java, Python and more. It is also home to 1000+ questions of Data structure and Algorithm segregated into sheets."
               />
             </div>
           </a>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
           <a
-            href="https://github.com/medhavi11/Screen-Recorder"
+            href="https://www.npmjs.com/package/blumea"
             className="cards-placement"
           >
             <div className="card " data-aos="zoom-in">
               <img
-                alt="random pic"
+                alt="Blumea"
                 className="card-img-top"
-                src={Screenrecorder}
+                src={Blumea}
                 style={{ minWidth: 300, minHeight: 100 }}
               />
               <CardHoverMenus
-                title="Screen Recorder"
+                title="Blumea"
                 description="The application helps to record the screen as well as tracks the time spent by user on the screen. The recording gets saved on your system after it is stopped."
                 flashFn={this.props.flashFn}
               />
@@ -80,7 +75,7 @@ Filter by year helps you to ,find your expenses for that year across different m
           </a>
         </div>
 
-        <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
+        {/* <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
           <a href="https://msackiit.tech/" className="cards-placement">
             {" "}
             <div className="card " data-aos="zoom-in">
@@ -97,7 +92,7 @@ Filter by year helps you to ,find your expenses for that year across different m
               />
             </div>
           </a>
-        </div>
+        </div> */}
         <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
           <a href="https://doubtconnect.in/" className="cards-placement">
             {" "}
@@ -116,7 +111,7 @@ Filter by year helps you to ,find your expenses for that year across different m
             </div>
           </a>
         </div>
-        <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
+        {/* <div className="col-sm-12 col-md-12 col-lg-6 mt-4 ">
           <a href="https://codeinturns.tech/" className="cards-placement">
             <div className="card " data-aos="zoom-in">
               <img
@@ -132,7 +127,7 @@ Filter by year helps you to ,find your expenses for that year across different m
               />
             </div>
           </a>
-        </div>
+        </div> */}
       </div>
     );
   }

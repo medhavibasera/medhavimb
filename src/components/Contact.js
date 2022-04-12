@@ -5,13 +5,11 @@ import emailjs from "emailjs-com";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import contact from "../css/Contact.module.css";
 import Alert from "./Alert.js";
-
 import hi from "../images/hi.png";
-import mail from "../images/gmail.png";
-import github from "../images/github-logo-square.png";
-import Linkedin from "../images/linkedin.png";
-import location from "../images/location.png";
-import { Divider } from "@material-ui/core";
+import mail from "../images/mail-surprise-svgrepo-com.svg";
+import github from "../images/github-svgrepo-com.svg";
+import Linkedin from "../images/linkedin-svgrepo-com.svg";
+import location from "../images/location-svgrepo-com.svg";
 
 export default function Contact() {
   const [name, setnameboolean] = useState(false);
@@ -79,19 +77,7 @@ export default function Contact() {
   return (
     <div className={contact.contactpage} name="contact">
       <Container className={contact.contactpagecontainer}>
-        <h1
-          // data-aos="fade-right"
-          style={{
-            marginBottom: "50px",
-            marginTop: "50px",
-            display: "inline-block",
-            fontFamily: "EB Garamond",
-            fontSize: "50px",
-            fontWeight: "900",
-          }}
-        >
-          .contact( )
-        </h1>
+        <h1 className={contact.contactHeader}>.contact( )</h1>
         <Row xs={1} md={2}>
           <Col className={contact.contactpagediv}>
             <div
@@ -101,6 +87,7 @@ export default function Contact() {
                 color: "#fff",
                 padding: "20px",
                 borderRadius: "20px",
+                fontFamily: "Ubuntu",
               }}
             >
               <Form onSubmit={sendEmail}>
@@ -146,7 +133,7 @@ export default function Contact() {
             style={{
               display: "flex",
               flexDirection: "column",
-              width: "100%",
+              width: "60%",
               // backgroundColor: "red",
             }}
           >
@@ -164,13 +151,13 @@ export default function Contact() {
               <span
                 style={{
                   fontSize: "18px",
-                  fontFamily: "Uchen",
-                  fontWeight: "600",
+                  fontFamily: "Ubuntu",
+                  fontWeight: "500",
                   paddingLeft: "10px",
                 }}
               >
                 {" "}
-                Dehradun,Uttarakhand
+                Dehradun, Uttarakhand
               </span>
             </div>
 
@@ -187,40 +174,22 @@ export default function Contact() {
                 style={{
                   fontSize: "18px",
                   textAlign: "right",
-                  fontWeight: "600",
+                  fontWeight: "500",
                   paddingLeft: "10px",
-                  fontFamily: "Uchen",
+                  fontFamily: "Ubuntu",
                 }}
               >
                 {" "}
                 mb.medhavi@gmail.com
               </span>
             </div>
-            <div className={contact.contactitemsocials}>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  flexDirection: "row",
-                  width: "20%",
-                  marginTop: "20px",
-                  // left: "50%",
-                }}
-              >
+            <div className={contact.socialBlock}>
+              <div className={contact.contactItemSocial}>
                 <a href="https://github.com/medhavi11">
-                  <img
-                    src={github}
-                    style={{ height: "30px", width: "30px", cursor: "pointer" }}
-                    alt=""
-                  />
+                  <img src={github} className={contact.socialIcon1} alt="" />
                 </a>
                 <a href="https://www.linkedin.com/in/medhavibasera/">
-                  <img
-                    src={Linkedin}
-                    style={{ height: "30px", width: "30px", cursor: "pointer" }}
-                    alt=""
-                  />
+                  <img src={Linkedin} className={contact.socialIcon2} alt="" />
                 </a>
               </div>
             </div>

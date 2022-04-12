@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bevan&family=Open+Sans:wght@300;600;800&display=swap");
-.Landingpage {
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+.LandingPage {
   min-height: 86vh !important;
-  /* background-color: #fff !important;
-  position: relative !important;
-  z-index: 10; */
 }
 .Landingpageimg {
   height: 600px;
@@ -15,13 +14,8 @@
 .Landingpageheader {
   font-family: "Bevan", sans-serif;
   font-size: 75px;
-  /* background-color: black; */
+
   opacity: 1;
-  /* background: url(../images/black4.jpeg);
-  background-repeat: repeat-x;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animate 140s linear infinite; */
 }
 @keyframes animate {
   from {
@@ -32,12 +26,12 @@
     background-position: -10000px 0;
   }
 }
-.Landingpagedesc {
-  font-size: 30px;
-  font-weight: 600;
-  font-family: "Uchen", sans-serif;
-  background: #f9f871;
+.LandingPageDesc {
+  font-size: 28px;
+  font-family: "Ubuntu", "Uchen", sans-serif;
+  background: yellow;
   padding: 0px 20px;
+  text-align: left;
 }
 
 @media (max-width: 764px) {
@@ -46,7 +40,7 @@
     display: none !important;
   }
 
-  .Landingpage {
+  .LandingPage {
     min-height: 65vh !important;
   }
 }
@@ -63,7 +57,7 @@
     position: absolute;
     z-index: 1;
   }
-  .Landingpage {
+  .LandingPage {
     padding-top: 140px !important;
   }
 }
