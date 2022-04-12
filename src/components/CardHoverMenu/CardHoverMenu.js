@@ -1,5 +1,4 @@
 import React from "react";
-import github from "../../images/github-1.png";
 import website from "../../images/domain1.png";
 
 const evStop = (ev) => {
