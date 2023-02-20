@@ -70,12 +70,26 @@ const About = () => {
             >
               Software Development Engineer Intern
             </h3>
+            <h5 className="vertical-timeline-element-subtitle">Cadence</h5>
+            {/* <p>Developed website for various Hackathon and events.</p> */}
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="July 2022 - Present"
+            style={{ fontFamily: "Ubuntu" }}
+          >
+            <h3
+              className="vertical-timeline-element-title"
+              style={{ fontWeight: "800" }}
+            >
+              Software Development Engineer Intern
+            </h3>
             <h5 className="vertical-timeline-element-subtitle">Awign</h5>
             {/* <p>Developed website for various Hackathon and events.</p> */}
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="Feb 2021 - Present"
+            date="Feb 2021 - July 2022"
             style={{ fontFamily: "Ubuntu" }}
           >
             <h3

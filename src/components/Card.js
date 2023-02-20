@@ -2,7 +2,7 @@ import React from "react";
 import CardHoverMenus from "./CardHoverMenu/CardHoverMenu";
 import Blumea from "../images/Blumea.png";
 import Qode from "../images/qode.png";
-import Techcolumns from "../images/TechColumns.png";
+import Techcolumns from "../images/Techcolumns.png";
 import db from "../images/DoubtConnect.png";
 
 //----====---------------------------------------------------
