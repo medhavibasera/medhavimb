@@ -9,7 +9,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import about from "../css/About.module.css";
 // import me from "../images/myphoto.jpg";
-import Medhavi from "../images/Medhavi.png";
+import Medhavi from "../images/portfolio.jpg";
 
 const About = () => {
   useEffect(() => {
@@ -31,11 +31,13 @@ const About = () => {
           <Col className={about.Aboutpagediv}>
             <div data-aos="fade-up">
               <p className={about.Aboutpageintro}>
-                I'm a passionate and creative developer from India with a strong
-                interest in Open source projects. A Computer Science
-                Undergraduate who likes to play around with frontends 🔮.
+                Hey there👋🏻 ! I'm Medhavi, rocking it at Whatfix, managing some
+                incredible projects 🚀. I thrive on customer-facing roles infused
+                with tech. My approach? Listen first🦻🏻, then deliver solutions
+                that perfectly blend client preferences with my
+                expertise 🪄, research 👩🏻‍🔬, and best practices 📚.
                 <br />
-                Some of the technologies and tools used by me include{"  "}
+                I've experience working in the following technologies {"  "}
                 <br />
                 <span></span>
                 <span style={{ color: "rgb(59, 216, 245)" }}>ReactJS</span>,
@@ -61,7 +63,21 @@ const About = () => {
         <VerticalTimeline style={{ marginBottom: "50p" }}>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="March 2022 - Present"
+            date="May 2023 - Present"
+            style={{ fontFamily: "Ubuntu" }}
+          >
+            <h3
+              className="vertical-timeline-element-title"
+              style={{ fontWeight: "800" }}
+            >
+              Solutions Engineer
+            </h3>
+            <h5 className="vertical-timeline-element-subtitle">Whatfix</h5>
+            {/* <p>Developed website for various Hackathon and events.</p> */}
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="March 2022 - May 2023"
             style={{ fontFamily: "Ubuntu" }}
           >
             <h3

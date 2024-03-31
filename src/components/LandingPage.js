@@ -39,7 +39,7 @@ function LandingPage() {
               <br />
             </h1>
             <p className={landing.LandingPageDesc}>
-              I'm a Frontend Web Developer
+              An aspiring <b>Product manager</b> from India.
             </p>
           </Col>
           <Col className={landing.LandingPageimgsec}>
