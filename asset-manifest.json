@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/medhavimb/static/css/main.3041717e.chunk.css",
-    "main.js": "/medhavimb/static/js/main.b69508db.chunk.js",
-    "main.js.map": "/medhavimb/static/js/main.b69508db.chunk.js.map",
+    "main.js": "/medhavimb/static/js/main.2dbb0361.chunk.js",
+    "main.js.map": "/medhavimb/static/js/main.2dbb0361.chunk.js.map",
     "runtime-main.js": "/medhavimb/static/js/runtime-main.30761143.js",
     "runtime-main.js.map": "/medhavimb/static/js/runtime-main.30761143.js.map",
     "static/css/2.54b4d304.chunk.css": "/medhavimb/static/css/2.54b4d304.chunk.css",
@@ -34,6 +34,6 @@
     "static/css/2.54b4d304.chunk.css",
     "static/js/2.d1c6b2d9.chunk.js",
     "static/css/main.3041717e.chunk.css",
-    "static/js/main.b69508db.chunk.js"
+    "static/js/main.2dbb0361.chunk.js"
   ]
 }
