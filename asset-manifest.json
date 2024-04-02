@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/medhavimb/static/css/main.3041717e.chunk.css",
+    "main.js": "/medhavimb/static/js/main.b69508db.chunk.js",
+    "main.js.map": "/medhavimb/static/js/main.b69508db.chunk.js.map",
+    "runtime-main.js": "/medhavimb/static/js/runtime-main.30761143.js",
+    "runtime-main.js.map": "/medhavimb/static/js/runtime-main.30761143.js.map",
+    "static/css/2.54b4d304.chunk.css": "/medhavimb/static/css/2.54b4d304.chunk.css",
+    "static/js/2.d1c6b2d9.chunk.js": "/medhavimb/static/js/2.d1c6b2d9.chunk.js",
+    "static/js/2.d1c6b2d9.chunk.js.map": "/medhavimb/static/js/2.d1c6b2d9.chunk.js.map",
+    "index.html": "/medhavimb/index.html",
+    "static/css/2.54b4d304.chunk.css.map": "/medhavimb/static/css/2.54b4d304.chunk.css.map",
+    "static/css/main.3041717e.chunk.css.map": "/medhavimb/static/css/main.3041717e.chunk.css.map",
+    "static/js/2.d1c6b2d9.chunk.js.LICENSE.txt": "/medhavimb/static/js/2.d1c6b2d9.chunk.js.LICENSE.txt",
+    "static/media/Blumea.c2daf330.png": "/medhavimb/static/media/Blumea.c2daf330.png",
+    "static/media/DoubtConnect.fc1666a4.png": "/medhavimb/static/media/DoubtConnect.fc1666a4.png",
+    "static/media/Landing-img.def1b1d9.png": "/medhavimb/static/media/Landing-img.def1b1d9.png",
+    "static/media/Techcolumns.db82fcf8.png": "/medhavimb/static/media/Techcolumns.db82fcf8.png",
+    "static/media/build-svgrepo-com.1a929da9.svg": "/medhavimb/static/media/build-svgrepo-com.1a929da9.svg",
+    "static/media/github-svgrepo-com.abfb351f.svg": "/medhavimb/static/media/github-svgrepo-com.abfb351f.svg",
+    "static/media/heart-svgrepo-com.8e0f9a50.svg": "/medhavimb/static/media/heart-svgrepo-com.8e0f9a50.svg",
+    "static/media/hi.a2f09423.png": "/medhavimb/static/media/hi.a2f09423.png",
+    "static/media/icons.b1cda373.png": "/medhavimb/static/media/icons.b1cda373.png",
+    "static/media/linkedin-svgrepo-com.fbb827b9.svg": "/medhavimb/static/media/linkedin-svgrepo-com.fbb827b9.svg",
+    "static/media/location-svgrepo-com.989a3f77.svg": "/medhavimb/static/media/location-svgrepo-com.989a3f77.svg",
+    "static/media/mail-surprise-svgrepo-com.7ac73c13.svg": "/medhavimb/static/media/mail-surprise-svgrepo-com.7ac73c13.svg",
+    "static/media/music-3-svgrepo-com.afa36f52.svg": "/medhavimb/static/media/music-3-svgrepo-com.afa36f52.svg",
+    "static/media/portfolio.782b60d0.jpg": "/medhavimb/static/media/portfolio.782b60d0.jpg",
+    "static/media/qode.0032d07d.png": "/medhavimb/static/media/qode.0032d07d.png",
+    "static/media/woman-typing.cf243dd6.mp4": "/medhavimb/static/media/woman-typing.cf243dd6.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.30761143.js",
+    "static/css/2.54b4d304.chunk.css",
+    "static/js/2.d1c6b2d9.chunk.js",
+    "static/css/main.3041717e.chunk.css",
+    "static/js/main.b69508db.chunk.js"
+  ]
+}
