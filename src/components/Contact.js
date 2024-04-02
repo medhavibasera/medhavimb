@@ -185,7 +185,7 @@ export default function Contact() {
             </div>
             <div className={contact.socialBlock}>
               <div className={contact.contactItemSocial}>
-                <a href="https://github.com/medhavi11">
+                <a href="https://github.com/medhavibasera">
                   <img src={github} className={contact.socialIcon1} alt="" />
                 </a>
                 <a href="https://www.linkedin.com/in/medhavibasera/">
